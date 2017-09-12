@@ -11,7 +11,7 @@ Para executar o projeto é preciso ter o [Docker compose](https://docs.docker.co
 # Passos para executar
 
 ### Passo 1
- clone o projeto no [bitbucket](https://bitbucket.org/Jose_Ferreira/dac-2017.1) 
+ clone o projeto no [github](https://github.com/joseferreir/integracao-de-modulos-com-docke) 
 
   **git clone https://github.com/joseferreir/integracao-de-modulos-com-docke.git **
 
