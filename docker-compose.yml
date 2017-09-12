@@ -1,24 +1,14 @@
 version: '2'
 services:
-  dbpostgres:
-    container_name: bancopg
-    image: postgres
-    volumes:
-      - ./bd:/var/lib/postgresql
-    ports:
-      - "5433:5432"
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: projeto
+ 
   core:
     container_name: coreapp
     build: ./app-core
     image: jose/core
     ports: 
      - "8081:8080"
-    links: 
-     - "dbpostgres:host-banco"
+     - "3700:3700"
+  
   web:
     container_name: webcliente
     build: ./app-web

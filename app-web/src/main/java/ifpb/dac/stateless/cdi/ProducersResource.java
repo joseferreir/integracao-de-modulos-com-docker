@@ -13,7 +13,8 @@ import javax.enterprise.inject.Produces;
 @ApplicationScoped
 public class ProducersResource {
     
-    //  java:global/rhecruta-core/UserServiceImpl!br.edu.ifpb.dac.rhecruta.shared.interfaces.UserService, java:global/rhecruta-core/UserServiceImpl
+   
+    //                                       java:global/stateless-ejb-core/CalculadoraImpl!ifpb.dac.stateless.IFCalculadora
     private static final String RESOURCE =  "java:global/stateless-ejb-core/CalculadoraImpl!ifpb.dac.stateless.IFCalculadora";
     
     @Dependent

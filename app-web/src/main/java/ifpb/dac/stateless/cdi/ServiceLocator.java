@@ -21,8 +21,8 @@ public class ServiceLocator {
         try {
             Properties props = new Properties();
             //rhecruta-core
-            props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost");
-//            props.setProperty("org.omg.CORBA.ORBInitialHost", "hot-core");
+          //  props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost");
+            props.setProperty("org.omg.CORBA.ORBInitialHost", "hot-core");
             props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
             props.put(Context.INITIAL_CONTEXT_FACTORY,
                     "com.sun.enterprise.naming.SerialInitContextFactory");
