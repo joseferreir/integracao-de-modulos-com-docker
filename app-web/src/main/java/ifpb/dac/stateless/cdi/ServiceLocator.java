@@ -20,9 +20,8 @@ public class ServiceLocator {
     protected <T> T lookup(String recurso, Class<T> tipo) {
         try {
             Properties props = new Properties();
-            //rhecruta-core
-          //  props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost");
-            props.setProperty("org.omg.CORBA.ORBInitialHost", "hot-core");
+            //dac-contacts-core
+            props.setProperty("org.omg.CORBA.ORBInitialHost", "host-core");
             props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
             props.put(Context.INITIAL_CONTEXT_FACTORY,
                     "com.sun.enterprise.naming.SerialInitContextFactory");
